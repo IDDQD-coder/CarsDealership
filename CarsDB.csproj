@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F10901E-C369-4240-9EA3-C1A0BE720746}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarsDB</RootNamespace>
+    <AssemblyName>CarsDB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsultantFindCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultantFindCar.Designer.cs">
+      <DependentUpon>ConsultantFindCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultantHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultantHome.Designer.cs">
+      <DependentUpon>ConsultantHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateClient.Designer.cs">
+      <DependentUpon>CreateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDetail.Designer.cs">
+      <DependentUpon>CreateDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindDetail.Designer.cs">
+      <DependentUpon>FindDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GradientPanel1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GradientPanel1.Designer.cs">
+      <DependentUpon>GradientPanel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerHome.Designer.cs">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MechanicEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MechanicEquipment.Designer.cs">
+      <DependentUpon>MechanicEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MechanicHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MechanicHome.Designer.cs">
+      <DependentUpon>MechanicHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesmanHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesmanHome.Designer.cs">
+      <DependentUpon>SalesmanHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StorekeeperHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StorekeeperHome.Designer.cs">
+      <DependentUpon>StorekeeperHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestDriveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestDriveForm.Designer.cs">
+      <DependentUpon>TestDriveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="БД_автосалонаDataSet.cs">
+      <DependentUpon>БД_автосалонаDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="БД_автосалонаDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>БД_автосалонаDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ConsultantFindCar.resx">
+      <DependentUpon>ConsultantFindCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultantHome.resx">
+      <DependentUpon>ConsultantHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateClient.resx">
+      <DependentUpon>CreateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateDetail.resx">
+      <DependentUpon>CreateDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindDetail.resx">
+      <DependentUpon>FindDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerHome.resx">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MechanicEquipment.resx">
+      <DependentUpon>MechanicEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MechanicHome.resx">
+      <DependentUpon>MechanicHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SalesmanHome.resx">
+      <DependentUpon>SalesmanHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StorekeeperHome.resx">
+      <DependentUpon>StorekeeperHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestDriveForm.resx">
+      <DependentUpon>TestDriveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="БД_автосалонаDataSet.xsc">
+      <DependentUpon>БД_автосалонаDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="БД_автосалонаDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>БД_автосалонаDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="БД_автосалонаDataSet.xss">
+      <DependentUpon>БД_автосалонаDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
